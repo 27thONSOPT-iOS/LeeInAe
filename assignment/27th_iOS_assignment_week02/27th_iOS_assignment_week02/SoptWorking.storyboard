@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="Rcy-il-hmn">
             <objects>
-                <viewController id="mW7-Yx-oAf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="mW7-Yx-oAf" customClass="ViewController" customModule="_7th_iOS_assignment_week02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qeo-Us-xJr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -637,6 +637,21 @@
                                     <constraint firstAttribute="trailing" secondItem="VK2-xP-ZCl" secondAttribute="trailing" id="iCa-52-bGg"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggp-Zo-YxB">
+                                <rect key="frame" x="284" y="1136" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.80392156859999997" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="GJ5-1u-f0T"/>
+                                    <constraint firstAttribute="width" constant="100" id="xdb-nK-gQR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <state key="normal" title="Top">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setScrollToTop:" destination="mW7-Yx-oAf" eventType="touchUpInside" id="bTd-Gy-cLu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kjM-Hw-l6O"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -647,12 +662,19 @@
                             <constraint firstItem="kjM-Hw-l6O" firstAttribute="bottom" secondItem="bNA-Qm-TUV" secondAttribute="bottom" id="Ygr-OM-IZp"/>
                             <constraint firstItem="bNA-Qm-TUV" firstAttribute="top" secondItem="CpD-Jt-tau" secondAttribute="bottom" id="ZCQ-89-BjN"/>
                             <constraint firstItem="kjM-Hw-l6O" firstAttribute="trailing" secondItem="CpD-Jt-tau" secondAttribute="trailing" id="b9K-lq-xM7"/>
+                            <constraint firstItem="kjM-Hw-l6O" firstAttribute="trailing" secondItem="Ggp-Zo-YxB" secondAttribute="trailing" constant="30" id="kqb-HM-wls"/>
                             <constraint firstItem="bNA-Qm-TUV" firstAttribute="width" secondItem="qeo-Us-xJr" secondAttribute="width" id="nz7-8S-yQc"/>
                             <constraint firstItem="kjM-Hw-l6O" firstAttribute="trailing" secondItem="bNA-Qm-TUV" secondAttribute="trailing" id="w5p-6f-k2G"/>
+                            <constraint firstItem="kjM-Hw-l6O" firstAttribute="bottom" secondItem="Ggp-Zo-YxB" secondAttribute="bottom" constant="30" id="yAF-hd-5iu"/>
                             <constraint firstItem="CpD-Jt-tau" firstAttribute="leading" secondItem="kjM-Hw-l6O" secondAttribute="leading" id="zc3-Vb-yQd"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="1300"/>
+                    <connections>
+                        <outlet property="bannerImage" destination="1a7-lf-qUU" id="D6G-cU-M8d"/>
+                        <outlet property="scrollView" destination="bNA-Qm-TUV" id="Ptx-c7-goU"/>
+                        <outlet property="topButton" destination="Ggp-Zo-YxB" id="VK0-uP-fNc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yiQ-tx-vdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
