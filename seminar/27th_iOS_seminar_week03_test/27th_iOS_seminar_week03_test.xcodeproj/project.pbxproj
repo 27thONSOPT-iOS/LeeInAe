@@ -17,6 +17,12 @@
 		ABCC6146254C571F00062AA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCC6145254C571F00062AA3 /* Assets.xcassets */; };
 		ABCC6149254C571F00062AA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCC6147254C571F00062AA3 /* LaunchScreen.storyboard */; };
 		ABCC6156254C7D3E00062AA3 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC6155254C7D3E00062AA3 /* SecondVC.swift */; };
+		ABD79DA1254EEBEB0082FBB8 /* TableViewTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD79DA0254EEBEB0082FBB8 /* TableViewTest.storyboard */; };
+		ABD79DA4254EEC0F0082FBB8 /* TableViewTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD79DA3254EEC0F0082FBB8 /* TableViewTestVC.swift */; };
+		ABD79DAB254EF30B0082FBB8 /* MusicRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD79DAA254EF30B0082FBB8 /* MusicRankCell.swift */; };
+		ABD79DAF254EF5DB0082FBB8 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD79DAE254EF5DB0082FBB8 /* Music.swift */; };
+		ABD79DB2254EFF6D0082FBB8 /* MusicInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD79DB1254EFF6D0082FBB8 /* MusicInfo.storyboard */; };
+		ABD79DB9254F01810082FBB8 /* MusicInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD79DB8254F01810082FBB8 /* MusicInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		ABCC6148254C571F00062AA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABCC614A254C571F00062AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABCC6155254C7D3E00062AA3 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		ABD79DA0254EEBEB0082FBB8 /* TableViewTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewTest.storyboard; sourceTree = "<group>"; };
+		ABD79DA3254EEC0F0082FBB8 /* TableViewTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTestVC.swift; sourceTree = "<group>"; };
+		ABD79DAA254EF30B0082FBB8 /* MusicRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRankCell.swift; sourceTree = "<group>"; };
+		ABD79DAE254EF5DB0082FBB8 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		ABD79DB1254EFF6D0082FBB8 /* MusicInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MusicInfo.storyboard; sourceTree = "<group>"; };
+		ABD79DB8254F01810082FBB8 /* MusicInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +80,13 @@
 				ABCC613E254C571E00062AA3 /* SceneDelegate.swift */,
 				ABCC6140254C571E00062AA3 /* ViewController.swift */,
 				AB4716C8254D889E0086102C /* PickerViewTest.storyboard */,
+				ABD79DA0254EEBEB0082FBB8 /* TableViewTest.storyboard */,
+				ABD79DB1254EFF6D0082FBB8 /* MusicInfo.storyboard */,
+				ABD79DAA254EF30B0082FBB8 /* MusicRankCell.swift */,
+				ABD79DAE254EF5DB0082FBB8 /* Music.swift */,
+				ABD79DA3254EEC0F0082FBB8 /* TableViewTestVC.swift */,
 				AB4716CB254D88BD0086102C /* PickerViewTestVC.swift */,
+				ABD79DB8254F01810082FBB8 /* MusicInfoVC.swift */,
 				ABCC6142254C571E00062AA3 /* Main.storyboard */,
 				ABCC6155254C7D3E00062AA3 /* SecondVC.swift */,
 				ABCC6145254C571F00062AA3 /* Assets.xcassets */,
@@ -136,6 +154,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABD79DB2254EFF6D0082FBB8 /* MusicInfo.storyboard in Resources */,
+				ABD79DA1254EEBEB0082FBB8 /* TableViewTest.storyboard in Resources */,
 				ABCC6149254C571F00062AA3 /* LaunchScreen.storyboard in Resources */,
 				AB4716C9254D889E0086102C /* PickerViewTest.storyboard in Resources */,
 				ABCC6146254C571F00062AA3 /* Assets.xcassets in Resources */,
@@ -154,7 +174,11 @@
 				ABCC613D254C571E00062AA3 /* AppDelegate.swift in Sources */,
 				ABCC6156254C7D3E00062AA3 /* SecondVC.swift in Sources */,
 				AB4716CC254D88BD0086102C /* PickerViewTestVC.swift in Sources */,
+				ABD79DB9254F01810082FBB8 /* MusicInfoVC.swift in Sources */,
+				ABD79DA4254EEC0F0082FBB8 /* TableViewTestVC.swift in Sources */,
+				ABD79DAF254EF5DB0082FBB8 /* Music.swift in Sources */,
 				AB4716CF254D8AE00086102C /* Part.swift in Sources */,
+				ABD79DAB254EF30B0082FBB8 /* MusicRankCell.swift in Sources */,
 				ABCC613F254C571E00062AA3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

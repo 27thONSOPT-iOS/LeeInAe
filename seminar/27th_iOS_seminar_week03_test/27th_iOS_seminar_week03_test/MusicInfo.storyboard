@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Music InfoVC-->
+        <scene sceneID="hfA-dU-l7h">
+            <objects>
+                <viewController storyboardIdentifier="MusicInfoVC" id="0Z7-r7-g9k" customClass="MusicInfoVC" customModule="_7th_iOS_seminar_week03_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xMC-sZ-XIY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWp-Uc-Ahc">
+                                <rect key="frame" x="150" y="114" width="114" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57H-d3-9gQ">
+                                <rect key="frame" x="183" y="172" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CNP-F5-D1y">
+                                <rect key="frame" x="100" y="296" width="214" height="214"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CNP-F5-D1y" secondAttribute="height" multiplier="1:1" id="Cn0-Qe-TtS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ybz-YK-lTS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CNP-F5-D1y" firstAttribute="leading" secondItem="Ybz-YK-lTS" secondAttribute="leading" constant="100" id="JpP-iB-zSe"/>
+                            <constraint firstItem="xWp-Uc-Ahc" firstAttribute="leading" secondItem="Ybz-YK-lTS" secondAttribute="leading" constant="150" id="T3Z-ET-7qv"/>
+                            <constraint firstItem="57H-d3-9gQ" firstAttribute="top" secondItem="xWp-Uc-Ahc" secondAttribute="bottom" constant="25" id="eCS-TZ-3al"/>
+                            <constraint firstItem="CNP-F5-D1y" firstAttribute="top" secondItem="57H-d3-9gQ" secondAttribute="bottom" constant="100" id="eZb-7Q-IHZ"/>
+                            <constraint firstItem="xWp-Uc-Ahc" firstAttribute="top" secondItem="Ybz-YK-lTS" secondAttribute="top" constant="70" id="ihU-C6-HXe"/>
+                            <constraint firstItem="57H-d3-9gQ" firstAttribute="centerX" secondItem="xWp-Uc-Ahc" secondAttribute="centerX" id="kLT-LN-37W"/>
+                            <constraint firstItem="Ybz-YK-lTS" firstAttribute="trailing" secondItem="CNP-F5-D1y" secondAttribute="trailing" constant="100" id="o70-qN-FEO"/>
+                            <constraint firstItem="Ybz-YK-lTS" firstAttribute="trailing" secondItem="xWp-Uc-Ahc" secondAttribute="trailing" constant="150" id="yXv-zF-cIZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="CNP-F5-D1y" id="B4C-eF-qBU"/>
+                        <outlet property="singerLabel" destination="57H-d3-9gQ" id="LJs-sW-Pxd"/>
+                        <outlet property="titleLabel" destination="xWp-Uc-Ahc" id="00V-lW-YOF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ipw-On-5we" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="350.72463768115944" y="39.508928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
