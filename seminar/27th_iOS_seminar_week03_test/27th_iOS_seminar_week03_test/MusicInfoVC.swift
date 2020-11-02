@@ -27,5 +27,8 @@ class MusicInfoVC: UIViewController {
             singerLabel.text = music.singer
             albumImageView.image = music.makeAlbumImage()
         }
+        
+        titleLabel.sizeToFit()
+        singerLabel.sizeToFit()
     }
 }

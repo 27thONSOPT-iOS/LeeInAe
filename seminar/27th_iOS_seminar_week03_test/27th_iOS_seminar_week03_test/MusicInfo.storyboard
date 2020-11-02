@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWp-Uc-Ahc">
-                                <rect key="frame" x="150" y="114" width="114" height="33"/>
+                                <rect key="frame" x="172.5" y="114" width="69" height="33"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,13 +39,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="CNP-F5-D1y" firstAttribute="leading" secondItem="Ybz-YK-lTS" secondAttribute="leading" constant="100" id="JpP-iB-zSe"/>
-                            <constraint firstItem="xWp-Uc-Ahc" firstAttribute="leading" secondItem="Ybz-YK-lTS" secondAttribute="leading" constant="150" id="T3Z-ET-7qv"/>
+                            <constraint firstItem="xWp-Uc-Ahc" firstAttribute="centerX" secondItem="Ybz-YK-lTS" secondAttribute="centerX" id="b2W-22-3Co"/>
                             <constraint firstItem="57H-d3-9gQ" firstAttribute="top" secondItem="xWp-Uc-Ahc" secondAttribute="bottom" constant="25" id="eCS-TZ-3al"/>
                             <constraint firstItem="CNP-F5-D1y" firstAttribute="top" secondItem="57H-d3-9gQ" secondAttribute="bottom" constant="100" id="eZb-7Q-IHZ"/>
                             <constraint firstItem="xWp-Uc-Ahc" firstAttribute="top" secondItem="Ybz-YK-lTS" secondAttribute="top" constant="70" id="ihU-C6-HXe"/>
                             <constraint firstItem="57H-d3-9gQ" firstAttribute="centerX" secondItem="xWp-Uc-Ahc" secondAttribute="centerX" id="kLT-LN-37W"/>
                             <constraint firstItem="Ybz-YK-lTS" firstAttribute="trailing" secondItem="CNP-F5-D1y" secondAttribute="trailing" constant="100" id="o70-qN-FEO"/>
-                            <constraint firstItem="Ybz-YK-lTS" firstAttribute="trailing" secondItem="xWp-Uc-Ahc" secondAttribute="trailing" constant="150" id="yXv-zF-cIZ"/>
                         </constraints>
                     </view>
                     <connections>
