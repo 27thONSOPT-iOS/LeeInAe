@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1FBC9B2550723700D336A8 /* DelegateTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1FBC9A2550723700D336A8 /* DelegateTest.storyboard */; };
+		AB1FBC9E2550726800D336A8 /* DelegateTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1FBC9D2550726800D336A8 /* DelegateTestVC.swift */; };
 		AB4716C9254D889E0086102C /* PickerViewTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4716C8254D889E0086102C /* PickerViewTest.storyboard */; };
 		AB4716CC254D88BD0086102C /* PickerViewTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4716CB254D88BD0086102C /* PickerViewTestVC.swift */; };
 		AB4716CF254D8AE00086102C /* Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4716CE254D8AE00086102C /* Part.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB1FBC9A2550723700D336A8 /* DelegateTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DelegateTest.storyboard; sourceTree = "<group>"; };
+		AB1FBC9D2550726800D336A8 /* DelegateTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateTestVC.swift; sourceTree = "<group>"; };
 		AB4716C8254D889E0086102C /* PickerViewTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PickerViewTest.storyboard; sourceTree = "<group>"; };
 		AB4716CB254D88BD0086102C /* PickerViewTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewTestVC.swift; sourceTree = "<group>"; };
 		AB4716CE254D8AE00086102C /* Part.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				ABD79DAE254EF5DB0082FBB8 /* Music.swift */,
 				ABD79DA3254EEC0F0082FBB8 /* TableViewTestVC.swift */,
 				AB4716CB254D88BD0086102C /* PickerViewTestVC.swift */,
+				AB1FBC9A2550723700D336A8 /* DelegateTest.storyboard */,
 				ABD79DB8254F01810082FBB8 /* MusicInfoVC.swift */,
 				ABD79DBB254F0F550082FBB8 /* CollectionViewTest.storyboard */,
 				ABD79DC9254F216A0082FBB8 /* PartBannerCell.swift */,
@@ -102,6 +107,7 @@
 				ABCC6147254C571F00062AA3 /* LaunchScreen.storyboard */,
 				ABCC614A254C571F00062AA3 /* Info.plist */,
 				AB4716CE254D8AE00086102C /* Part.swift */,
+				AB1FBC9D2550726800D336A8 /* DelegateTestVC.swift */,
 			);
 			path = 27th_iOS_seminar_week03_test;
 			sourceTree = "<group>";
@@ -164,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABD79DB2254EFF6D0082FBB8 /* MusicInfo.storyboard in Resources */,
+				AB1FBC9B2550723700D336A8 /* DelegateTest.storyboard in Resources */,
 				ABD79DA1254EEBEB0082FBB8 /* TableViewTest.storyboard in Resources */,
 				ABD79DBC254F0F550082FBB8 /* CollectionViewTest.storyboard in Resources */,
 				ABCC6149254C571F00062AA3 /* LaunchScreen.storyboard in Resources */,
@@ -190,6 +197,7 @@
 				ABD79DAF254EF5DB0082FBB8 /* Music.swift in Sources */,
 				AB4716CF254D8AE00086102C /* Part.swift in Sources */,
 				ABD79DBF254F13FD0082FBB8 /* CollectionViewTestVC.swift in Sources */,
+				AB1FBC9E2550726800D336A8 /* DelegateTestVC.swift in Sources */,
 				ABD79DAB254EF30B0082FBB8 /* MusicRankCell.swift in Sources */,
 				ABCC613F254C571E00062AA3 /* SceneDelegate.swift in Sources */,
 			);

@@ -34,7 +34,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>CollectionViewTest</string>
+					<string>DelegateTest</string>
 				</dict>
 			</array>
 		</dict>
