@@ -12,6 +12,9 @@ class MainVC: UIViewController {
     @IBOutlet weak var partLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
+    var user: User? = User(part: "iOS", name: "No Name")
+    var part: String?
+    
     @IBAction func touchUpLogin(_ sender: UIButton) {
         guard let loginVC = self.storyboard?.instantiateViewController(identifier: "LoginVC") as? LoginVC else {return}
         
@@ -21,5 +24,19 @@ class MainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setLabel()
+    }
+    
+    func setLabel() {
+        if let user = self.user {
+            self.partLabel.text = user.part
+            self.nameLabel.text = user.name
+            
+            partLabel.sizeToFit()
+            nameLabel.sizeToFit()
+        }
     }
 }

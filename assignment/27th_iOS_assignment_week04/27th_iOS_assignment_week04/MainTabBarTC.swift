@@ -21,10 +21,11 @@ class MainTabBarTC: UITabBarController {
         
         MainVC.tabBarItem.title = "Home"
         MainVC.tabBarItem.image = UIImage(systemName: "house")
-        MainVC.tabBarItem.selectedImage?.withTintColor(.yellow)
+        MainVC.tabBarItem.selectedImage = UIImage(systemName: "house.fill")
         
         ProfileVC.tabBarItem.title = "SOPT + NETWORKING"
-        ProfileVC.tabBarItem.image = UIImage(systemName: "house")
+        ProfileVC.tabBarItem.image = UIImage(systemName: "paperplane")
+        ProfileVC.tabBarItem.selectedImage = UIImage(systemName: "paperplane.fill")
         
         setViewControllers([MainVC, ProfileVC], animated: true)
     }
