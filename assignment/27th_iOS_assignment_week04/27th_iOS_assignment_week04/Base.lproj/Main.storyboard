@@ -42,7 +42,7 @@
                                     <constraint firstItem="BfL-zQ-jVn" firstAttribute="top" secondItem="JnB-b8-IDe" secondAttribute="top" constant="44" id="mk4-Pp-Cz5"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gfH-LN-bDj">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gfH-LN-bDj">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rKK-so-UVF">
@@ -159,6 +159,7 @@
                     <connections>
                         <outlet property="collectionView" destination="gfH-LN-bDj" id="zgc-xz-ATd"/>
                         <outlet property="headerHeightConstraint" destination="Fud-Nt-Kpg" id="jDd-u1-AV0"/>
+                        <outlet property="headerTopConstraint" destination="xdU-tN-r9p" id="d31-Eb-Vfo"/>
                         <outlet property="headerView" destination="JnB-b8-IDe" id="lHn-rc-ask"/>
                     </connections>
                 </viewController>

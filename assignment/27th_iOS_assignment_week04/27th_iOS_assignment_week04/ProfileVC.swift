@@ -10,6 +10,7 @@ import UIKit
 class ProfileVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var headerTopConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var headerHeightConstraint: NSLayoutConstraint!
     var profile: [Profile] = []
@@ -34,6 +35,26 @@ class ProfileVC: UIViewController {
                                     Profile(name: "이주혁", tag: "#hereis#아요#내꿈은 #사과농장#ENFP", imageName: "juhyeok"),
                                     Profile(name: "김나연", tag: "#이제막학기 #여러분들이랑_친해지고_싶어요 #번개스터디환영", imageName: "nayeon")
         ])
+    }
+    
+    func hideHeader() {
+        headerTopConstraint.constant = -88
+        UIView.animate(withDuration: 0.5, animations: {
+            //            self.headerView.transform = .identity
+            //            self.collectionView.transform = .identity
+            self.view.layoutIfNeeded()
+            //            self.headerView.heightAnchor.constraint(equalToConstant: 88).isActive = true
+        })
+    }
+    
+    func showHeader(){
+        headerTopConstraint.constant = 0
+        UIView.animate(withDuration: 0.5, animations: {
+            //            self.headerView.transform = .identity
+            //            self.collectionView.transform = .identity
+            self.view.layoutIfNeeded()
+            //            self.headerView.heightAnchor.constraint(equalToConstant: 88).isActive = true
+        })
     }
 }
 
@@ -73,31 +94,21 @@ extension ProfileVC: UICollectionViewDelegateFlowLayout {
         return 0
     }
     
-    func hideHeader() {
-        UIView.animate(withDuration: 0.5, animations: {
-            self.headerView.transform = .identity
-            self.view.layoutIfNeeded()
-            //            self.headerView.heightAnchor.constraint(equalToConstant: 88).isActive = true
-        })
-    }
+    
 }
 
 
 extension ProfileVC: UIScrollViewDelegate {
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        // 나타나기
-        hideHeader()
-    }
+    //    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    //        // 나타나기´
+    //        showHeader()
+    //    }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        hideHeader()
+        showHeader()
     }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        UIView.animate(withDuration: 0.5, animations: {
-            self.headerView.transform = CGAffineTransform(translationX: 0, y: -88)
-            //            self.headerView.heightAnchor.constraint(equalToConstant: 0).isActive = true
-            self.view.layoutIfNeeded()
-        })
+        hideHeader()
     }
 }
