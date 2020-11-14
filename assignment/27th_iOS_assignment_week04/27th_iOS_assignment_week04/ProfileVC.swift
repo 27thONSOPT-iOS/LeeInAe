@@ -9,7 +9,9 @@ import UIKit
 
 class ProfileVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var headerView: UIView!
     
+    @IBOutlet weak var headerHeightConstraint: NSLayoutConstraint!
     var profile: [Profile] = []
     
     override func viewDidLoad() {
@@ -69,5 +71,28 @@ extension ProfileVC: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+}
+
+
+extension ProfileVC: UIScrollViewDelegate {
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        // 나타나기
+        UIView.animate(withDuration: 0.5, animations: {
+            self.headerView.transform = .identity
+            self.view.layoutIfNeeded()
+        })
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        print("did end dragg")
+    }
+        
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        self.headerView.transform = CGAffineTransform(translationX: 0, y: -88)
+        UIView.animate(withDuration: 0.5, animations: {
+            
+            self.view.layoutIfNeeded()
+        })
     }
 }
