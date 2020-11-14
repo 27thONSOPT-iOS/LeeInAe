@@ -72,26 +72,31 @@ extension ProfileVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
+    
+    func hideHeader() {
+        UIView.animate(withDuration: 0.5, animations: {
+            self.headerView.transform = .identity
+            self.view.layoutIfNeeded()
+            //            self.headerView.heightAnchor.constraint(equalToConstant: 88).isActive = true
+        })
+    }
 }
 
 
 extension ProfileVC: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         // 나타나기
-        UIView.animate(withDuration: 0.5, animations: {
-            self.headerView.transform = .identity
-            self.view.layoutIfNeeded()
-        })
+        hideHeader()
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        print("did end dragg")
+        hideHeader()
     }
-        
+    
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        self.headerView.transform = CGAffineTransform(translationX: 0, y: -88)
         UIView.animate(withDuration: 0.5, animations: {
-            
+            self.headerView.transform = CGAffineTransform(translationX: 0, y: -88)
+            //            self.headerView.heightAnchor.constraint(equalToConstant: 0).isActive = true
             self.view.layoutIfNeeded()
         })
     }
