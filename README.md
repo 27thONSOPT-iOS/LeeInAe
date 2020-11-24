@@ -6,8 +6,8 @@
 |week01|iOS/Swift 기초, Xcode 기본 사용법, View 전환 방법| 🍏 | [🍎](https://github.com/27thONSOPT-iOS/LeeInAe/tree/master/assignment/27th_iOS_assignment_week01) |
 |week02|AutoLayout, StackView, ScrollView| [🍏](https://github.com/27thONSOPT-iOS/LeeInAe/tree/master/assignment/27th_iOS_assignment_week02) | [🍎](https://github.com/27thONSOPT-iOS/LeeInAe/tree/master/assignment/27th_iOS_assignment_week02) | 
 |week03|DelegatePattern, TableView, CollectionView| [🍏](https://github.com/27thONSOPT-iOS/LeeInAe/tree/master/assignment/27th_iOS_assignment_week03) | - | 
-|week04|Animation, TabbarController, CocoaPods| - | - | 
+|week04|Animation, TabbarController, CocoaPods| 🍏 | [🍎](https://github.com/27thONSOPT-iOS/LeeInAe/tree/master/assignment/27th_iOS_assignment_week04) | 
 |week05|디자인 합동 세미나| - | - | 
-|week06|Networking, REST API, 솝커톤| - | - | 
+|week06|Networking, REST API, 솝커톤| [🍏](https://github.com/27thONSOPT-iOS/LeeInAe/tree/master/assignment/27th_iOS_assignment_week06)  | - | 
 |week07|서버 합동 세미나| - | - | 
 |week08|Open API| - | - | 
